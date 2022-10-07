@@ -81,6 +81,7 @@ body {
 }
 
 .link.current {
+  position: relative;
   color: var(--accent-color);
 }
 
@@ -123,7 +124,6 @@ span.logo-accent {
 }
 
 .site-nav-link {
-  position: relative;
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -153,7 +153,6 @@ span.logo-accent {
 }
 
 .auth-nav-link {
-  position: relative;
   color: var(--secondary-text-color);
   display: flex;
   align-items: center;
@@ -179,6 +178,7 @@ span.logo-accent {
   height: 4px;
   background: var(--accent-color);
   border-radius: 2px;
+  margin: -1px;
 }
 
 .auth-nav-link:hover,
@@ -402,7 +402,6 @@ header.top-page {
 }
 
 .team-soc-link {
-  position: relative;
   color: var(--soc-clients-color);
   display: flex;
   align-items: center;
@@ -620,7 +619,6 @@ span.footer-logo-accent {
 }
 
 .grid-link {
-  position: relative;
   display: block;
   background-color: var(--container-bg-color);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
