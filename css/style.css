@@ -723,7 +723,7 @@ span.footer-logo-accent {
   position: absolute;
   width: 30px;
   height: 30px;
-  border: 1px solid #909090;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: transparent;
   right: 10px;
