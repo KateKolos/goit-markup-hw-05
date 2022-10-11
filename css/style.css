@@ -11,6 +11,8 @@
   --footer-link-color: rgba(255, 255, 255, 0.6);
   --soc-clients-color: #afb1b8;
   --grid-overlay-color: rgba(33, 150, 243, 0.9);
+  --transition-duration: 250ms;
+  --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 p,
@@ -130,7 +132,7 @@ span.logo-accent {
   line-height: 1.14;
   letter-spacing: 0.02em;
   font-style: normal;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--transition-duration) var(--transition-timing-function);
 }
 
 .auth-nav {
@@ -160,7 +162,7 @@ span.logo-accent {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--transition-duration) var(--transition-timing-function);
 }
 
 .site-nav-link:hover,
@@ -189,7 +191,7 @@ span.logo-accent {
 .auth-nav-icon {
   margin-right: 10px;
   fill: currentColor;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--transition-duration) var(--transition-timing-function);
 }
 
 .auth-nav-icon:hover,
@@ -252,7 +254,8 @@ header.top-page {
   text-align: center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--transition-duration)
+    var(--transition-timing-function);
 }
 
 .hero-button:hover {
@@ -409,8 +412,9 @@ header.top-page {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--transition-duration)
+      var(--transition-timing-function),
+    color var(--transition-duration) var(--transition-timing-function);
 }
 
 .team-soc-icon {
@@ -447,8 +451,8 @@ header.top-page {
   border: 1px solid var(--soc-clients-color);
   border-radius: 4px;
   padding: 16px 32px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--transition-duration) var(--transition-timing-function),
+    border-color var(--transition-duration) var(--transition-timing-function);
 }
 
 .clients-icon {
@@ -496,7 +500,7 @@ span.footer-logo-accent {
   font-size: 14px;
   line-height: 1.71;
   display: block;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--transition-duration) var(--transition-timing-function);
 }
 
 .footer-nav-link:hover,
@@ -510,7 +514,7 @@ span.footer-logo-accent {
   font-size: 14px;
   line-height: 1.71;
   display: inline-block;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--transition-duration) var(--transition-timing-function);
 }
 
 .footer-nav-link-address:hover,
@@ -557,7 +561,8 @@ span.footer-logo-accent {
   height: 44px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--transition-duration)
+    var(--transition-timing-function);
 }
 
 .footer-soc-icon {
@@ -594,9 +599,10 @@ span.footer-logo-accent {
   border-color: transparent;
   border-radius: 4px;
   padding: 6px 25px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--transition-duration) var(--transition-timing-function),
+    background-color var(--transition-duration)
+      var(--transition-timing-function),
+    box-shadow var(--transition-duration) var(--transition-timing-function);
 }
 
 .portfolio-button:hover,
@@ -621,7 +627,8 @@ span.footer-logo-accent {
 .grid-link {
   display: block;
   background-color: var(--container-bg-color);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow var(--transition-duration)
+    var(--transition-timing-function);
 }
 
 .grid-link:hover,
@@ -688,7 +695,8 @@ span.footer-logo-accent {
   padding: 63px 24px;
   height: 100%;
   transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform var(--transition-duration)
+    var(--transition-timing-function);
   overflow: auto;
 }
 
